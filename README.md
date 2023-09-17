@@ -50,3 +50,9 @@ I would need more time to look into the error to solve it.
 I didn't have a chance to deploy to AWS due to the docker blocker, but as soon as I figure that one out the next steps would just be:
   use the [docker and ECS docs](https://docs.docker.com/cloud/ecs-integration/) to integrate the front and backend to an ECS instance on AWS
   
+After dockerizing the React frontend I would push the images to the Amazon Elastic Container Registry to allow ECS to access the images during deployment.
+Next, I would create the ECS cluster and configure it to possibly also use Application Load Balancer (ALB) for routing traffic to the frontend and API containers.
+Next, create Task Definitions to tell AWS which images, resources, env vars, and other settings to provision and use.
+Next, create the ECS Services, configure env vars, setup networking via VPC settings that would allow proper and secure communication between the frontend, api, and database containers. 
+Finally, I would deploy the ECS services, test the deployment, use Amazon CloudWatch or AWS CloudTrail to log and monitor that everything is working as it should. 
+When the app grows, I would set up CI/CD pipline using AWS CodePipline and AWS CodeBuild to automate deployments whenever I push changes to there repos. 
