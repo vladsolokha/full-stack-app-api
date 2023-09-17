@@ -11,9 +11,9 @@ Open another terminal window and cd into 'api' directory
 run npm start
 ```
 
-If you get an error, it might be because there's no locally running PostGres database.
+If you get an error, it might be because there's no locally running Postgres database.
 
-Install PostGres with the following criteria according to the app.js file in the 'api' directory:
+Install Postgres with the following criteria according to the app.js file in the 'api' directory:
 ```
   user: 'postgres',
   host: 'localhost',
@@ -41,7 +41,7 @@ With the front-end and back-end runninge
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 Test the app by clicking the Save button on the save page which will INSERT the table into the database users table you created earlier
-Test the Fetch page which will display the same table, except from your local PostGres database.
+Test the Fetch page which will display the same table, except from your local Postgres database.
 
 I had errors while trying to spin up my api container as it was attached to the db. 
 The error had to do with issues on api end not being able to establish a connection due to port or host issues. 
