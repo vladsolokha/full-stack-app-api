@@ -3,7 +3,7 @@
 Clone the repo into the same directory as the full-stack-app is located in.
 So you should have 2 directories in the parent directory: one for 'full-stack-app' and one for 'api'
 
-Spin up the React with Next.js app in full-stack-app by reading the README page
+Spin up the React with Next.js app in full-stack-app if you haven't already.
 [full-stack-app repo](https://github.com/vladsolokha/full-stack-app)
 
 Open another terminal window and cd into 'api' directory
